@@ -7,12 +7,12 @@
 """
 print(" Введите число от 1 до 9")
 
-inputValue = input()
-if not inputValue.isdigit() or (int(inputValue) < 1 or int(inputValue) > 9):
+input_value = input()
+if not input_value.isdigit() or (int(input_value) < 1 or int(input_value) > 9):
     print("Число не подходит")
 else:
-    firstInt = int(inputValue)
-    secondInt = firstInt + firstInt * 10
-    thirdInt = secondInt + firstInt * 100
+    first_int = int(input_value)
+    second_int = first_int + first_int * 10
+    third_int = second_int + first_int * 100
     print("Результат: ")
-    print(firstInt + secondInt + thirdInt)
+    print(first_int + second_int + third_int)
