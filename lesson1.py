@@ -8,11 +8,18 @@
 a = 1
 b = "string"
 c = object()
+print(id(c))
 
 print(a)
 print(b)
 print(c)
 
+print("Введите число")
 d = input()
-print("Значение из консольного ввода: "+ d)
+print("Значение из консольного ввода: " + d)
+print("Введите строку")
+e = input()
+print("Значение из консольного ввода: " + e)
 print(id(c))
+print(id(a))
+print(id(e))
