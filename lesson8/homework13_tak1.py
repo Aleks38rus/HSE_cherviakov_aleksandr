@@ -17,10 +17,10 @@ import requests
 class ParserCBRF:
 
     def start(self):
-        file_name = self.make_a_req(datetime.datetime.today())
-        return self.read_xml(file_name)
+        file_name = self.__make_a_req(datetime.datetime.today())
+        return self.__read_xml(file_name)
 
-    def make_a_req(sellf, date):
+    def __make_a_req(sellf, date):
         today = date.strftime('%d/%m/%Y')
         params = {'date_req': today}
         request = requests.get('https://www.cbr.ru/scripts/XML_daily.asp?', params=params)
@@ -30,7 +30,7 @@ class ParserCBRF:
             f.write(request.content)
         return file_name
 
-    def read_xml(self, file_name):
+    def __read_xml(self, file_name):
         tree = ET.parse(file_name)
         root = tree.getroot()
 
