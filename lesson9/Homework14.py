@@ -10,7 +10,7 @@ import random
 import telebot
 from telebot import types
 
-bot_token = ''  # токен от ot father
+bot_token = '' # bot father токен
 f = open('advice.txt', 'r', encoding='UTF-8')
 advice = f.read().split('\n')
 f.close()
@@ -22,7 +22,6 @@ bot = telebot.TeleBot(bot_token)
 
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
-    # Добавляем две кнопки
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = types.KeyboardButton("Совет 🦉")
     item2 = types.KeyboardButton("Шутка 🤡")
