@@ -14,6 +14,7 @@ import requests
 ставки на указанную дату.
  """
 
+
 class ParserCBRF:
 
     def start(self):
