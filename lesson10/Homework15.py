@@ -18,7 +18,7 @@ question TEXT NOT NULL
 )
 ''')
 
-bot_token = '' # bot father токен
+bot_token = '7255438902:AAGSGrtUeHI_2OYEGMTefJL94AS0cvEvf34' # bot father токен
 bot = telebot.TeleBot(bot_token)
 
 question1 = 'Какого цвета нет в светофоре?'

@@ -11,7 +11,7 @@ import random
 import telebot
 from telebot import types
 
-bot_token = '' # bot father токен
+bot_token = '7255438902:AAGSGrtUeHI_2OYEGMTefJL94AS0cvEvf34' # bot father токен
 f = open('advice.txt', 'r', encoding='UTF-8')
 advice = f.read().split('\n')
 f.close()
